@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
 
-class RegistrationScreen extends StatelessWidget {
+class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,17 +14,7 @@ class RegistrationScreen extends StatelessWidget {
             TextField(
               keyboardType: TextInputType.emailAddress,
               decoration: KtextFieldDecoration.copyWith(
-                  labelText: 'Name', hintText: 'Full name'),
-              textAlign: TextAlign.center,
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            TextField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: KtextFieldDecoration.copyWith(
-                  labelText: 'Email', hintText: 'example@gmail.com'),
-              textAlign: TextAlign.center,
+                  labelText: 'email', hintText: 'example@gmail.com'),
             ),
             SizedBox(
               height: 15,
@@ -32,9 +22,8 @@ class RegistrationScreen extends StatelessWidget {
             TextField(
               obscureText: true,
               decoration: KtextFieldDecoration.copyWith(
-                labelText: 'Password',
+                labelText: 'password',
               ),
-              textAlign: TextAlign.center,
             ),
             SizedBox(
               height: 20,
